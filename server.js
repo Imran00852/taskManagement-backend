@@ -11,14 +11,13 @@ const app = express();
 config();
 connectDB();
 
-
 //cookie parser
 app.use(cookieParser());
 
 //cors
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: [process.env.FRONTEND_URL],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
@@ -26,8 +25,6 @@ app.use(
 
 //parse json data
 app.use(express.json());
-
-
 
 //api's
 app.use("/api/users", userRoutes);
