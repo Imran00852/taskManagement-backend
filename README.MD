@@ -33,7 +33,7 @@ A simple Node.js application that allows users to manage tasks. Users can regist
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/task-management-app.git
+   git clone https://github.com/imran00852/taskManagement-backend.git
    cd task-management-app
 
 2. Install dependencies:
@@ -101,14 +101,14 @@ Upon success, a cookie will be set for authentication.
 ### Manage Tasks
 
 #### Create a Task
-Send a `POST` request to `/api/tasks/new` with the following fields in the request body:
+Send a `POST` request to `/api/tasks` with the following fields in the request body:
 - `title`
 - `description`
 
 **Note**: Authentication is required.
 
 #### View All Tasks
-Send a `GET` request to `/api/tasks/all`.
+Send a `GET` request to `/api/tasks`.
 
 **Note**: Authentication is required.
 
